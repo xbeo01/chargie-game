@@ -5,7 +5,7 @@ from pygame.locals import *
 pygame.init()
 pygame.mixer.init()
 pygame.font.init()
-FPS = 120
+FPS = 60
 CLOCK = pygame.time.Clock()
 WIDTH, HEIGHT = 704, 704
 DISPLAY = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -16,7 +16,7 @@ class Chargie():
   x = (WIDTH // 2) - (size // 2)
   y = (HEIGHT // 2) - (size // 2)
   image = pygame.transform.scale(pygame.image.load('./img/cg_south_1.png').convert_alpha(),(size, size))
-  speed = size // 32
+  speed = size // 16
   angle = 0
   count = 1
   queue = [""]
